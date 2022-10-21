@@ -1,0 +1,411 @@
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #f5f5f5;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+header {
+  background-image: linear-gradient(rgba(63, 63, 63, 0.589), #802b009a),
+    url(images/tasty-food-top-view.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+}
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+  float: left;
+  margin-top: 1.5%;
+  margin-left: 0.08%;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  font-size: 90%;
+  margin-top: 43px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  text-decoration: none;
+  color: #ff9666ee;
+  transition: color;
+}
+
+/* ------------------------------------------- */
+/* FEATURES SECTION */
+/* ------------------------------------------- */
+.features-section {
+  color: #4b4b4b;
+  padding-top: 90px;
+  text-align: center;
+}
+.col {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  line-height: 130%;
+  padding-bottom: 50px;
+}
+
+/* ------------------------------------------- */
+/* MEALS SECTION*/
+/* ------------------------------------------- */
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 0px 5px 5px 5px;
+  position: relative;
+}
+
+.meals-photo {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.meals-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/1.4;
+  margin: 0;
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+.meals-showcase > li:hover > .meals-photo img {
+  transform: scale(1.075);
+  transition: transform;
+  opacity: 0.7;
+}
+.meals-showcase > li:hover > .meals-photo.fade-effect img {
+  transform: scale(1.075);
+  transition: transform, blur;
+  filter: blur(4px);
+  opacity: 0.7;
+}
+
+/* OVERLAY TEXT EFFECT */
+.meals-showcase > li > span {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: #f5f5f5;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+  top: 4rem;
+  left: 4rem;
+  right: 4rem;
+  bottom: 4rem;
+  position: absolute;
+}
+
+.meals-showcase > li:hover > span {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+}
+
+/* ------------------------------------------- */
+/* HOW IT WORKS/
+/* ------------------------------------------- */
+.how-it-works {
+  background-color: #a7a7a73a;
+}
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-right: 3%;
+  margin-top: 90px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-steps > p,
+.works-steps > div {
+  text-align: left;
+}
+.works-steps > p {
+  color: #505050;
+  padding: 0 0 5% 10%;
+}
+.works-steps > div {
+  text-align: center;
+  color: #f85a11;
+  border: 2px solid #f85a11;
+  border-radius: 50%;
+  width: 8%;
+  float: left;
+  padding: 5px;
+}
+
+.btn-appstore {
+  height: 40px;
+  width: auto;
+  margin: 10px;
+}
+
+.btn-playstore {
+  height: 41px;
+  width: 27%;
+  margin: 10px;
+}
+.hiw-heading {
+  padding-top: 50px;
+}
+
+/* ------------------------------------------- */
+/* CITIES */
+/* ------------------------------------------- */
+.cities-section {
+  color: #242424;
+}
+.city-features {
+  color: #505050;
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-align: justify;
+}
+.cities_cities {
+  margin-top: 50px;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+.twitter-links:link,
+.twitter-links:visited {
+  text-decoration: none;
+  color: #505050;
+  padding-bottom: 2.4px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+.twitter-links:hover,
+.twitter-links:active {
+  text-decoration: none;
+  color: #f85a11;
+  padding-bottom: 2.5px;
+  border-bottom: 1px solid #f85a11;
+}
+/* ------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------- */
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  word-spacing: 0.5px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 200%;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 140%;
+  letter-spacing: 2px;
+  color: #505050;
+}
+
+h3 {
+  font-size: 90%;
+  color: #505050;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+h2::after {
+  display: block;
+  height: 3px;
+  background-color: #ff7434;
+  width: 60%;
+  content: " ";
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.our-menu {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.our-menu::after {
+  display: block;
+  height: 3px;
+  background-color: #ff7434;
+  width: 40%;
+}
+
+/* BUTTONS */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300px;
+  text-decoration: none;
+  border-width: 2px;
+}
+
+.complete-btn:link,
+.complete-btn:visited {
+  background-color: #ff7434;
+  border-radius: 50px;
+  color: #f7f5f6;
+  margin-right: 10px;
+}
+
+.complete-btn:hover,
+.complete-btn:active {
+  background-color: #f85a11;
+  border-color: #f85a11;
+  transition: background-color, border;
+}
+
+.ghost-btn:link,
+.ghost-btn:visited {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #ff7434;
+  color: #f7f5f6;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.ghost-btn:hover,
+.ghost-btn:active {
+  background-color: #f85a11;
+  transition: background-color, border;
+  border-color: #f85a11;
+}
+
+/* PARAGRAPH */
+.Copyright-LongText {
+  line-height: 140%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: large;
+}
+
+.box p {
+  font-size: 70%;
+  text-align: justify;
+  line-height: 130%;
+}
+
+/* ICONS */
+.icon-big {
+  color: #f85a11;
+  font-size: 150%;
+  display: block;
+}
+.city-features > i {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #f85a11;
+  font-size: 24px;
+  margin-right: 3px;
+}
+
+/* FADE-EFFECT */
+.fade {
+  filter: blur(0px);
+}
+.fade:hover {
+  filter: blur(4px);
+}
+
+/* TRANSITIONS */
+.main-nav li a:hover,
+.main-nav li a:active,
+.meals-showcase > li:hover > .meals-photo img,
+.meals-showcase > li:hover > .meals-photo.fade-effect img,
+.meals-showcase > li:hover > span,
+.complete-btn:hover,
+.complete-btn:active,
+.ghost-btn:hover,
+.ghost-btn:active
+/* .twitter-links:hover,
+.twitter-links:active*/ {
+  transition: 0.4s;
+}
