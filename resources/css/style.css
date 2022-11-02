@@ -299,7 +299,7 @@ blockquote {
 blockquote::before {
   content: "\201C";
   position: absolute;
-  font-size: 80px;
+  font-size: 300%;
   font-weight: 500;
   left: -5px;
   top: -14px;
@@ -316,6 +316,75 @@ cite img {
   border-radius: 50%;
   display: block;
   padding: 5px;
+}
+
+/* ------------------------------------------- */
+/* SIGN-UP SECTION */
+/* ------------------------------------------- */
+
+.section-plans {
+  background-color: #a7a7a73a;
+  color: #000;
+}
+
+.plan-box {
+  margin-top: -20px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 98%;
+  margin-left: 5%;
+  text-align: left;
+  box-shadow: 0 0 2px #6d6d6d;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.plan-box div:nth-child(1) {
+  background-color: #f0efef;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-top: 5px;
+  font-weight: 100;
+  color: #f85a11;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+/* HEADINGS */
+.sign-up {
+  padding-top: 8%;
+}
+
+.plan-name {
+  font-weight: 700;
+  font-size: 70%;
+  padding-bottom: 10px;
 }
 /* ------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -351,7 +420,7 @@ h2 {
 h3 {
   font-size: 90%;
   color: #505050;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 5px;
 }
 
@@ -408,7 +477,7 @@ h2::after {
   border-radius: 50px;
   border-style: solid;
   border-color: #ff7434;
-  color: #f7f5f6;
+  color: #ff7434;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -416,8 +485,9 @@ h2::after {
 .ghost-btn:hover,
 .ghost-btn:active {
   background-color: #f85a11;
-  transition: background-color, border;
+  transition: background-color, border, color;
   border-color: #f85a11;
+  color: #f7f5f6;
 }
 
 /* PARAGRAPH */
@@ -440,6 +510,12 @@ h2::after {
   color: #f85a11;
   font-size: 150%;
   display: block;
+}
+
+.icon-small {
+  color: #f85a11;
+  font-size: 100%;
+  padding-right: 10px;
 }
 
 .city-features > i {
