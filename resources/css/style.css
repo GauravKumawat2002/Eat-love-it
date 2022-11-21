@@ -437,6 +437,7 @@ input[type="checkbox"] {
 /* ------------------------------------------- */
 footer {
   background-color: #333;
+  font-size: 70%;
 }
 
 .footer-nav {
@@ -465,7 +466,7 @@ footer {
 .social-media-nav a:visited {
   text-decoration: none;
   color: #e6e6e6;
-  padding-bottom: 2.4px;
+  /* padding-bottom: 2.4px; */
   transition: color 0.2s;
 }
 
@@ -490,10 +491,10 @@ footer {
   color: #c32aa3;
 }
 
-.ion-logo-facebook:hover,
-.ion-logo-twitter:hover,
-.ion-logo-googleplus:hover,
-.ion-logo-instagram:hover {
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
   transition: color 0.2s;
 }
 
