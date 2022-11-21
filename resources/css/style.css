@@ -466,14 +466,39 @@ footer {
   text-decoration: none;
   color: #e6e6e6;
   padding-bottom: 2.4px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s, color 0.2s;
+  transition: color 0.2s;
+}
+
+.social-media-nav a:link,
+.social-media-nav a:visited {
+  font-size: 180%;
+}
+
+.ion-logo-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+  color: #55acee;
+}
+
+.ion-logo-googleplus:hover {
+  color: #dc4e41;
+}
+
+.ion-logo-instagram:hover {
+  color: #c32aa3;
+}
+
+.ion-logo-facebook:hover,
+.ion-logo-twitter:hover,
+.ion-logo-googleplus:hover,
+.ion-logo-instagram:hover {
+  transition: color 0.2s;
 }
 
 .footer-nav a:hover,
-.footer-nav a:active,
-.social-media-nav a:hover,
-.social-media-nav a:active {
+.footer-nav a:active {
   text-decoration: none;
   color: #f85a11;
   padding-bottom: 2.5px;
