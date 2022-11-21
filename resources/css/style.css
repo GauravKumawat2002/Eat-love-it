@@ -27,6 +27,10 @@ html {
   height: 0;
   visibility: hidden;
 }
+
+.colz {
+  padding: 50px;
+}
 /* ---------------------------------------- */
 /* HEADER */
 /* ---------------------------------------- */
@@ -386,6 +390,107 @@ cite img {
   font-size: 70%;
   padding-bottom: 10px;
 }
+
+/* ------------------------------------------- */
+/* CONTACT FORM */
+/* ------------------------------------------- */
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  accent-color: #f85a11;
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #e64d07;
+}
+select {
+  background-color: transparent;
+}
+
+input[type="checkbox"] {
+  accent-color: #f85a11;
+  margin: 0 15px 0 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.coly {
+  padding: 10px !important;
+  color: #111111;
+  text-align: left !important;
+}
+
+.formhead {
+  margin: 40px auto;
+}
+
+/* ------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------- */
+footer {
+  background-color: #333;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-media-nav {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-media-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav a,
+.social-media-nav a {
+  text-decoration: none;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-media-nav a:link,
+.social-media-nav a:visited {
+  text-decoration: none;
+  color: #e6e6e6;
+  padding-bottom: 2.4px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active,
+.social-media-nav a:hover,
+.social-media-nav a:active {
+  text-decoration: none;
+  color: #f85a11;
+  padding-bottom: 2.5px;
+  /* border-bottom: 1px solid #f85a11; */
+}
+
+.footer-nav li:last-child,
+.social-media-nav li:last-child {
+  margin-right: 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
 /* ------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------- */
@@ -457,6 +562,11 @@ h2::after {
   border-width: 2px;
 }
 
+.btn:hover,
+.btn:active {
+  background-color: #e64d07;
+}
+
 .complete-btn:link,
 .complete-btn:visited {
   background-color: #ff7434;
@@ -488,6 +598,24 @@ h2::after {
   transition: background-color, border, color;
   border-color: #f85a11;
   color: #f7f5f6;
+}
+
+input[type="submit"] {
+  padding: 10px 30px;
+  background-color: #ff7434;
+  border-radius: 50px;
+  color: whitesmoke;
+}
+input[type="submit"]:link,
+input[type="submit"]:visited {
+  background-color: #ff7434;
+}
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  color: #f85a11;
+  border-color: #f85a11;
+  background-color: transparent;
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
 }
 
 /* PARAGRAPH */
