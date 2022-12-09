@@ -1,9 +1,134 @@
 /* Big tablet to 1200px*/
 @media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .features-section h3 {
+    font-size: 80%;
+  }
+
+  .works-steps > p {
+    font-size: 18px;
+    padding-left: 15%;
+  }
+  .works-steps > div {
+    width: 10%;
+  }
+  .app-screen {
+    width: 45%;
+  }
+
+  .btn-appstore {
+    height: 30px;
+    margin: 15px;
+  }
+
+  .city-features {
+    font-size: 17px;
+  }
 }
 
 /* Small tablet to big tablets: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+  body {
+    font-size: 19px;
+  }
+  section {
+    padding: 30px 0;
+  }
+
+  .Copyright-LongText {
+    line-height: 140%;
+    width: 80%;
+    margin-left: 10%;
+    font-size: large;
+  }
+  .features-section h3 {
+    font-size: 74%;
+  }
+  .box p {
+    font-size: 75%;
+  }
+  .our-menu {
+    padding: 0px 0 50px 0;
+  }
+
+  .meals-section {
+    padding-top: 0;
+  }
+  .meals-showcase > li > span {
+    letter-spacing: 0.5px;
+    top: 3rem;
+    font-size: 14px;
+  }
+
+  .steps-box:first-child {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .steps-box:last-child {
+    margin-top: 50px;
+    margin-left: -40px;
+  }
+  .app-screen {
+    width: 50%;
+  }
+  .btn-appstore {
+    height: 30px;
+    margin: 15px;
+  }
+  .btn-playstore {
+    height: 40px;
+    width: 40%;
+  }
+
+  .works-steps {
+    font-size: 16px;
+  }
+  .works-steps > p {
+    padding: 0 0 5% 15%;
+  }
+  .works-steps > div {
+    width: 10%;
+    padding: 5px;
+    /* margin-right: 10px; */
+  }
+  .cities_cities {
+    margin-top: 38px;
+  }
+
+  .city-features > i {
+    width: 11.95px;
+    font-size: 18px;
+  }
+
+  .city-features {
+    font-size: 13.4px;
+    font-weight: 300;
+  }
+
+  .plan-price {
+    font-size: 250%;
+    font-weight: 500;
+  }
+  .plan-box ul li {
+    font-size: 14px;
+  }
+
+  blockquote {
+    font-size: 18px;
+  }
+
+  cite img {
+    margin-top: 20px;
+  }
 }
 
 /* Small phones to small tablets: from 481 to 767px */
