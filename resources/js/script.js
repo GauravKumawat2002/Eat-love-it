@@ -78,4 +78,19 @@ $(document).ready(() => {
     },
     { offset: "50%;" }
   );
+
+  // MOBILE NAVIGATION
+  $(".js--nav-icon").click(function () {
+    var navigation = $(".js--main-nav");
+    var icon = $(".js--nav-icon i");
+
+    navigation.slideToggle(200);
+    if (icon.hasClass("ion-md-menu")) {
+      icon.addClass("ion-md-close");
+      icon.removeClass("ion-md-menu");
+    } else {
+      icon.addClass(" ion-md-menu");
+      icon.removeClass("ion-md-close");
+    }
+  });
 });

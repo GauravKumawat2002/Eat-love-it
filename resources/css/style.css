@@ -54,22 +54,6 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.logo,
-.logo-black {
-  height: 90px;
-  width: auto;
-  float: left;
-  margin-top: 1.5%;
-  margin-left: 0.08%;
-}
-.logo-black {
-  display: none;
-  height: 50px;
-  width: auto;
-  float: left;
-  margin-top: 5px;
-}
-
 /* MAIN NAVIGATION */
 .main-nav {
   float: right;
@@ -97,11 +81,23 @@ header {
   color: #ff9666ee;
   transition: color;
 }
+.logo,
+.logo-black {
+  height: 90px;
+  width: auto;
+  float: left;
+  margin-top: 1.5%;
+  margin-left: 0.08%;
+}
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 10px 0;
+}
 
 /* STICKY NAVIGATION */
-.sticky-nav .main-nav {
-  margin-top: 5px;
-}
 .sticky-nav {
   position: fixed;
   z-index: 1;
@@ -112,12 +108,15 @@ header {
   box-shadow: 0 2px 2px #a5a5a5;
   padding-bottom: 0;
 }
-
-.sticky-nav .logo-black {
-  display: block;
+.sticky-nav .main-nav {
+  margin-top: 5px;
 }
+
 .sticky-nav .logo {
   display: none;
+}
+.sticky-nav .logo-black {
+  display: block;
 }
 
 .sticky-nav .main-nav li a:link,
@@ -132,6 +131,19 @@ header {
   transition: color;
 }
 
+/* ------------------------------------------- */
+/* MOBILE NAVIGATION */
+/* ------------------------------------------- */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 1.5%;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #ffffff;
+}
 /* ------------------------------------------- */
 /* FEATURES SECTION */
 /* ------------------------------------------- */
@@ -192,7 +204,7 @@ header {
   opacity: 0.7;
 }
 
-.meals-showcase > li:hover > .meals-photo.fade-effect img {
+.meals-showcase > li:hover > .meals-photo img {
   transform: scale(1.075);
   transition: transform, blur;
   filter: blur(4px);
@@ -740,7 +752,7 @@ input[type="submit"]:active {
 .main-nav li a:hover,
 .main-nav li a:active,
 .meals-showcase > li:hover > .meals-photo img,
-.meals-showcase > li:hover > .meals-photo.fade-effect img,
+.meals-showcase > li:hover > .meals-photo img,
 .meals-showcase > li:hover > span,
 .complete-btn:hover,
 .complete-btn:active,

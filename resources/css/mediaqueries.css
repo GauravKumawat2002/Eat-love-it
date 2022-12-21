@@ -148,6 +148,31 @@
   .main-nav {
     display: none;
   }
+  .main-nav {
+    float: left;
+    margin: 1.5% 0 0 15px;
+  }
+  .main-nav li {
+    display: block;
+    padding: 5px 0;
+    font-size: 100%;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+  }
+  .sticky-nav .main-nav {
+    margin-top: 10px;
+  }
+  .sticky-nav .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky-nav .mobile-nav-icon i {
+    color: #020202;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
   .Copyright-LongText {
     width: 100%;
     margin-left: 0;
