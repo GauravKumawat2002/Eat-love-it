@@ -1,6 +1,15 @@
 /* ---------------------------------------- */
 /* BASIC SETUP */
 /* ---------------------------------------- */
+:root {
+  --heading-color: #4b4b4b;
+  --text-color: #505050;
+  --heading-underline-color: #ff7434;
+  --most-used-color: #f85a11;
+  --hello-world: #ff7434;
+  --white-color-shade: #f5f5f5;
+  --white-color-shade2: #f7f5f6;
+}
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +22,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 200;
-  color: #f5f5f5;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   /* position: relative; */
@@ -38,7 +46,7 @@ body {
 /* HEADER */
 /* ---------------------------------------- */
 header {
-  background-image: linear-gradient(rgba(63, 63, 63, 0.589), #802b009a),
+  background-image: linear-gradient(#3f3f3f96, #802b009a),
     url(images/tasty-food-top-view.jpg);
   background-size: cover;
   background-position: right;
@@ -72,7 +80,7 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
   text-decoration: none;
-  color: #f5f5f5;
+  color: var(--white-color-shade);
 }
 
 .main-nav li a:hover,
@@ -104,7 +112,7 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #fffffff2;
   box-shadow: 0 2px 2px #a5a5a5;
   padding-bottom: 0;
 }
@@ -121,13 +129,13 @@ header {
 
 .sticky-nav .main-nav li a:link,
 .sticky-nav .main-nav li a:visited {
-  color: #111111;
+  color: #111;
   text-decoration: none;
 }
 .sticky-nav .main-nav li a:hover,
 .sticky-nav .main-nav li a:active {
   text-decoration: none;
-  color: #ff9666ee;
+  color: var(--most-used-color);
   transition: color;
 }
 
@@ -142,13 +150,13 @@ header {
 }
 .mobile-nav-icon i {
   font-size: 200%;
-  color: #ffffff;
+  color: #fff;
 }
 /* ------------------------------------------- */
 /* FEATURES SECTION */
 /* ------------------------------------------- */
 .features-section {
-  color: #4b4b4b;
+  color: var(--text-color);
   padding-top: 90px;
   text-align: center;
 }
@@ -185,7 +193,7 @@ header {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #000;
   border-radius: 10px;
 }
 
@@ -216,7 +224,7 @@ header {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1.5px;
-  color: #f5f5f5;
+  color: var(--white-color-shade);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -262,14 +270,14 @@ header {
 }
 
 .works-steps > p {
-  color: #505050;
+  color: var(--text-color);
   padding: 0 0 5% 10%;
 }
 
 .works-steps > div {
   text-align: center;
-  color: #f85a11;
-  border: 2px solid #f85a11;
+  color: var(--most-used-color);
+  border: 2px solid var(--most-used-color);
   border-radius: 50%;
   width: 8%;
   float: left;
@@ -300,7 +308,7 @@ header {
 }
 
 .city-features {
-  color: #505050;
+  color: var(--text-color);
   margin-bottom: 5px;
   font-size: 20px;
   text-align: justify;
@@ -320,7 +328,7 @@ header {
 .twitter-links:link,
 .twitter-links:visited {
   text-decoration: none;
-  color: #505050;
+  color: var(--text-color);
   padding-bottom: 2.4px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s, color 0.2s;
@@ -329,25 +337,25 @@ header {
 .twitter-links:hover,
 .twitter-links:active {
   text-decoration: none;
-  color: #f85a11;
+  color: var(--most-used-color);
   padding-bottom: 2.5px;
-  border-bottom: 1px solid #f85a11;
+  border-bottom: 1px solid var(--most-used-color);
 }
 
 /* ------------------------------------------- */
 /* CUSTOMER TESTIMONIALS SECTION */
 /* ------------------------------------------- */
 .Customer-Testimonials {
-  background-image: linear-gradient(rgba(63, 63, 63, 0.589), #0505059a),
+  background-image: linear-gradient(#3f3f3f96, #0505059a),
     url(images/back-customers.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #f5f5f5;
+  color: var(--white-color-shade);
   background-attachment: fixed;
 }
 
 .C-T-heading {
-  color: whitesmoke;
+  color: var(--white-color-shade);
   margin-top: 60px;
 }
 
@@ -418,7 +426,7 @@ cite img {
   font-size: 300%;
   margin-top: 5px;
   font-weight: 100;
-  color: #f85a11;
+  color: var(--most-used-color);
 }
 
 .plan-price span {
@@ -462,7 +470,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  accent-color: #f85a11;
+  accent-color: var(--most-used-color);
   width: 100%;
   padding: 7px;
   border-radius: 3px;
@@ -473,7 +481,7 @@ select {
 }
 
 input[type="checkbox"] {
-  accent-color: #f85a11;
+  accent-color: #e64d07;
   margin: 0 15px 0 0;
 }
 
@@ -560,9 +568,9 @@ footer {
 .footer-nav a:hover,
 .footer-nav a:active {
   text-decoration: none;
-  color: #f85a11;
+  color: var(--most-used-color);
   padding-bottom: 2.5px;
-  /* border-bottom: 1px solid #f85a11; */
+  border-bottom: 1px solid var(--most-used-color);
 }
 
 .footer-nav li:last-child,
@@ -574,6 +582,7 @@ footer p {
   text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
+  color: var(--white-color-shade);
 }
 
 /* ------------------------------------------- */
@@ -597,6 +606,7 @@ h1 {
   margin: 0;
   font-size: 200%;
   letter-spacing: 2px;
+  color: var(--white-color-shade);
 }
 
 h2 {
@@ -604,12 +614,12 @@ h2 {
   padding-bottom: 2%;
   font-size: 140%;
   letter-spacing: 2px;
-  color: #505050;
+  color: var(--heading-color);
 }
 
 h3 {
   font-size: 90%;
-  color: #505050;
+  color: var(--heading-color);
   /* padding-top: 20px; */
   padding-bottom: 5px;
 }
@@ -617,7 +627,7 @@ h3 {
 h2::after {
   display: block;
   height: 3px;
-  background-color: #ff7434;
+  background-color: var(--heading-underline-color);
   width: 60%;
   content: " ";
   text-align: center;
@@ -633,7 +643,7 @@ h2::after {
 .our-menu::after {
   display: block;
   height: 3px;
-  background-color: #ff7434;
+  background-color: var(--heading-underline-color);
   width: 40%;
 }
 
@@ -647,23 +657,23 @@ h2::after {
   border-width: 2px;
 }
 
-.btn:hover,
+/* .btn:hover,
 .btn:active {
   background-color: #e64d07;
-}
+} */
 
 .complete-btn:link,
 .complete-btn:visited {
-  background-color: #ff7434;
+  background-color: var(--hello-world);
   border-radius: 50px;
-  color: #f7f5f6;
+  color: var(--white-color-shade2);
   margin-right: 10px;
 }
 
 .complete-btn:hover,
 .complete-btn:active {
-  background-color: #f85a11;
-  border-color: #f85a11;
+  background-color: var(--most-used-color);
+  border-color: var(--most-used-color);
   transition: background-color, border;
 }
 
@@ -671,34 +681,34 @@ h2::after {
 .ghost-btn:visited {
   border-radius: 50px;
   border-style: solid;
-  border-color: #ff7434;
-  color: #ff7434;
+  border-color: var(--hello-world);
+  color: var(--hello-world);
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
 .ghost-btn:hover,
 .ghost-btn:active {
-  background-color: #f85a11;
+  background-color: var(--most-used-color);
   transition: background-color, border, color;
-  border-color: #f85a11;
-  color: #f7f5f6;
+  border-color: var(--most-used-color);
+  color: var(--white-color-shade2);
 }
 
 input[type="submit"] {
   padding: 10px 30px;
-  background-color: #ff7434;
+  background-color: var(--hello-world);
   border-radius: 50px;
   color: whitesmoke;
 }
 input[type="submit"]:link,
 input[type="submit"]:visited {
-  background-color: #ff7434;
+  background-color: var(--hello-world);
 }
 input[type="submit"]:hover,
 input[type="submit"]:active {
-  color: #f85a11;
-  border-color: #f85a11;
+  color: var(--most-used-color);
+  border-color: var(--most-used-color);
   background-color: transparent;
   transition: background-color 0.25s, color 0.25s, border-color 0.25s;
 }
@@ -720,13 +730,13 @@ input[type="submit"]:active {
 
 /* ICONS */
 .icon-big {
-  color: #f85a11;
+  color: var(--most-used-color);
   font-size: 150%;
   display: block;
 }
 
 .icon-small {
-  color: #f85a11;
+  color: var(--most-used-color);
   font-size: 100%;
   padding-right: 10px;
 }
@@ -735,7 +745,7 @@ input[type="submit"]:active {
   display: inline-block;
   width: 30px;
   text-align: center;
-  color: #f85a11;
+  color: var(--most-used-color);
   font-size: 24px;
   margin-right: 3px;
 }
