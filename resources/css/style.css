@@ -47,7 +47,7 @@ body {
 /* ---------------------------------------- */
 header {
   background-image: linear-gradient(#3f3f3f96, #802b009a),
-    url(images/tasty-food-top-view.jpg);
+    url(images/tasty-food-top-view-min.jpg);
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
@@ -347,7 +347,7 @@ header {
 /* ------------------------------------------- */
 .Customer-Testimonials {
   background-image: linear-gradient(#3f3f3f96, #0505059a),
-    url(images/back-customers.jpg);
+    url(images/back-customers-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white-color-shade);

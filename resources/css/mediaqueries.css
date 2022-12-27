@@ -110,7 +110,9 @@
     font-size: 13.4px;
     font-weight: 300;
   }
-
+  .city-features > a {
+    font-size: 12px;
+  }
   .plan-price {
     font-size: 250%;
     font-weight: 500;
@@ -184,21 +186,43 @@
   h2 {
     font-size: 150%;
   }
+  h3 {
+    font-size: 80%;
+  }
+  .features-section h3 {
+    font-size: 70%;
+  }
   .meals-showcase > li > span {
     letter-spacing: 0.5px;
     font-size: 11px;
   }
 
   .works-steps > div {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 32px !important;
   }
   .steps-box:last-child {
     margin-top: 10px;
     margin-left: 0;
   }
+
   .app-screen {
-    width: 40%;
+    width: 50%;
+  }
+  .btn-appstore {
+    width: 30%;
+  }
+  .city-features > i {
+    width: 11.95px;
+    font-size: 15px;
+  }
+  .city-features {
+    font-size: 9.8px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .city-features > a {
+    font-size: 9.8px;
   }
   .sign-up {
     margin-bottom: 20px;
@@ -218,6 +242,44 @@
   }
   .footer-nav-width {
     width: 50% !important;
+    margin: 1% 0% !important;
+  }
+  .works-steps > div {
+    width: 30px;
+    height: 40px;
+  }
+  .works-steps > p {
+    font-size: 14px;
+    padding-left: 20%;
+  }
+  .colz {
+    width: 100% !important;
+    margin: 1% 0 !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+  .steps-box:last-child {
+    margin-top: 70px;
+    margin-left: -40px;
+    font-size: 9px;
+    line-height: 140%;
+    word-spacing: 4px;
+  }
+  .btn-appstore,
+  .btn-playstore {
+    width: 35%;
+  }
+  .btn-playstore {
+    margin-left: 0;
+  }
+  .app-screen {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 667px) {
+  .layoutadjustment {
+    width: 48% !important;
   }
 }
 
@@ -229,6 +291,11 @@
   .contact-form {
     width: 100%;
   }
+  .footer-nav li,
+  .social-media-nav li {
+    font-size: 8.5px;
+    margin-right: 10px;
+  }
 }
 
 /* @media only screen and (min-width: 775px) and (max-width: 1023px) {
@@ -239,4 +306,6 @@
   .app-screen {
     width: 50%;
   }
+
+   and (max-width: 234px) 
 } */
