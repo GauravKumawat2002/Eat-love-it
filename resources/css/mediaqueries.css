@@ -296,7 +296,7 @@
     font-size: 8.5px;
     margin-right: 10px;
   }
-  .meals-section > ul > li {
+  .meals-section li {
     width: 33%;
   }
 }
