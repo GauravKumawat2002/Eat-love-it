@@ -683,8 +683,6 @@ h2::after {
   border-style: solid;
   border-color: var(--hello-world);
   color: var(--hello-world);
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 
 .ghost-btn:hover,
