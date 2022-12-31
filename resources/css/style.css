@@ -51,6 +51,7 @@ header {
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
+  clip-path: circle(95.1% at 49% 0);
   height: 100vh;
 }
 
